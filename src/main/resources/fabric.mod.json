@@ -1,0 +1,30 @@
+{
+    "schemaVersion": 1,
+    "id": "wizardry",
+    "version": "${version}",
+    "name": "Wizardry",
+    "description": "A mod adding assorted enchantments and tools.",
+    "authors": [
+        "Hellscaped"
+    ],
+    "contact": {
+        "website": "https://hellscaped.dev",
+        "repo": "https://github.com/hellscaped/Wizardry"
+    },
+    "license": "MIT",
+    "icon": "assets/wizardry/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "dev.hellscaped.wizardry.client.WizardryClient"
+        ],
+        "main": [
+            "dev.hellscaped.wizardry.Wizardry"
+        ]
+    },
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "fabric": "*",
+        "minecraft": "${minecraft_version}"
+    }
+}
