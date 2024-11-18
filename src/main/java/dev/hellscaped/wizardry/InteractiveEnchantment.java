@@ -18,8 +18,9 @@ public class InteractiveEnchantment extends Enchantment {
                 ItemStack heldItem = player.getStackInHand(hand);
                 if(EnchantmentHelper.getLevel(this, heldItem) > 0 && !world.isClient()) {
                     onEnchantmentUse(player, world, hand);
+                    return TypedActionResult.success(heldItem);
                 }
-                return TypedActionResult.success(heldItem);
+                return TypedActionResult.fail(heldItem);
             }
         );
     }
