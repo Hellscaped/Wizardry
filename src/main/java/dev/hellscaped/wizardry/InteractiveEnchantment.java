@@ -20,7 +20,7 @@ public class InteractiveEnchantment extends Enchantment {
                     onEnchantmentUse(player, world, hand);
                     return TypedActionResult.success(heldItem);
                 }
-                return TypedActionResult.fail(heldItem);
+                return TypedActionResult.pass(heldItem);
             }
         );
     }
