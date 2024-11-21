@@ -13,7 +13,6 @@
     },
     "license": "MIT",
     "icon": "assets/wizardry/icon.png",
-    "environment": "client",
     "entrypoints": {
         "client": [
             "dev.hellscaped.wizardry.client.WizardryClient"
